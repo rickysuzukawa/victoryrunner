@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - FxTemporaire
+  - Enemy
+  - AttackHand
+  - Goal
+  - Partner
+  - EnemyDestroyArea
+  - ClampWall
+  - SnakeEnemy
+  - SpeedUpItem
+  - GuardItem
+  - GoldCoin
+  - Rock
+  - Obstacles
+  - ItemBigHand
+  - AttackBigHand
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Enemy
+  - EnemyThroughArea
+  - EnemyBlockArea
+  - Runner
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI_Back
+    uniqueID: 2266004787
+    locked: 0
+  - name: UI_Middle
+    uniqueID: 4230423879
+    locked: 0
+  - name: UI_Front
+    uniqueID: 2603278397
+    locked: 0

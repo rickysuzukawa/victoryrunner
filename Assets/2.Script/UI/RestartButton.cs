@@ -21,20 +21,15 @@ public class RestartButton : MonoBehaviour
 
     }
 
-
-    void ShowInterstitialAd() {
-
-        interstitialAdManager.ShowInterstitialAd();
-
-    }
-
     public void RestartScene() {
 
         ShowInterstitialAd();
 
-        Time.timeScale = 1.0f;
-        Scene thisScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(thisScene.name);
+    }
+
+    void ShowInterstitialAd() {
+
+        interstitialAdManager.ShowInterstitialAd();
 
     }
 

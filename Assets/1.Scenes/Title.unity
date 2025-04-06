@@ -974,7 +974,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0, y: 457.75}
   m_SizeDelta: {x: -600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &854585389
@@ -1015,6 +1015,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854585387}
   m_CullTransparentMesh: 1
+--- !u!1 &912995925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 912995927}
+  - component: {fileID: 912995926}
+  m_Layer: 0
+  m_Name: InterstitialAdManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &912995926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912995925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296cf80d66acb4cf4bb5d414702f4dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &912995927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912995925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.256855, z: -3.3308694}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &984362380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,7 +2755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -802.33}
+  m_AnchoredPosition: {x: 0, y: -877.6}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691621625
@@ -3107,8 +3151,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2037834961}
   - component: {fileID: 2037834960}
+  - component: {fileID: 2037834962}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3124,7 +3169,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 840ed820092ab4fa1869472915c29790, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3225,6 +3270,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2037834962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037834959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b127776f4f359431bbf07ba77c38b92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageBGMList:
+  - stageName: Title
+    bgmClip: {fileID: 8300000, guid: 840ed820092ab4fa1869472915c29790, type: 3}
+  - stageName: Stage1
+    bgmClip: {fileID: 8300000, guid: 5150f0417cb6f4e8c8c9dfbb9f105b33, type: 3}
+  - stageName: Stage2
+    bgmClip: {fileID: 8300000, guid: 5150f0417cb6f4e8c8c9dfbb9f105b33, type: 3}
+  - stageName: Stage3
+    bgmClip: {fileID: 8300000, guid: 8dfcdb605acd241bc94f23f3b0bd0620, type: 3}
+  - stageName: Stage4
+    bgmClip: {fileID: 8300000, guid: 8dfcdb605acd241bc94f23f3b0bd0620, type: 3}
+  - stageName: Stage5
+    bgmClip: {fileID: 8300000, guid: 8dfcdb605acd241bc94f23f3b0bd0620, type: 3}
+  - stageName: Stage6
+    bgmClip: {fileID: 8300000, guid: 5150f0417cb6f4e8c8c9dfbb9f105b33, type: 3}
+  - stageName: Stage7
+    bgmClip: {fileID: 8300000, guid: 5d25425a99a6a4cbeb552eadbe944bae, type: 3}
+  - stageName: Stage8
+    bgmClip: {fileID: 8300000, guid: 8dfcdb605acd241bc94f23f3b0bd0620, type: 3}
+  - stageName: Stage9
+    bgmClip: {fileID: 8300000, guid: 3aeb57e8156da428abbf25d1ca725921, type: 3}
+  - stageName: Stage10
+    bgmClip: {fileID: 8300000, guid: 5150f0417cb6f4e8c8c9dfbb9f105b33, type: 3}
+  - stageName: Stage11
+    bgmClip: {fileID: 8300000, guid: 3aeb57e8156da428abbf25d1ca725921, type: 3}
+  - stageName: Stage12
+    bgmClip: {fileID: 8300000, guid: 5150f0417cb6f4e8c8c9dfbb9f105b33, type: 3}
+  - stageName: Stage13
+    bgmClip: {fileID: 8300000, guid: 5d25425a99a6a4cbeb552eadbe944bae, type: 3}
+  - stageName: Stage14
+    bgmClip: {fileID: 8300000, guid: b1b9f5d82de354f7ab79975913852506, type: 3}
+  - stageName: Stage15
+    bgmClip: {fileID: 8300000, guid: 33938db48b2e143df8d31e6fc7e13d14, type: 3}
+  - stageName: Stage16
+    bgmClip: {fileID: 8300000, guid: 840ed820092ab4fa1869472915c29790, type: 3}
+  - stageName: Stage17
+    bgmClip: {fileID: 8300000, guid: 3aeb57e8156da428abbf25d1ca725921, type: 3}
+  - stageName: Stage18
+    bgmClip: {fileID: 8300000, guid: b1b9f5d82de354f7ab79975913852506, type: 3}
+  - stageName: Stage19
+    bgmClip: {fileID: 8300000, guid: 33938db48b2e143df8d31e6fc7e13d14, type: 3}
+  - stageName: Stage20
+    bgmClip: {fileID: 8300000, guid: 8dfcdb605acd241bc94f23f3b0bd0620, type: 3}
+  - stageName: Stage21
+    bgmClip: {fileID: 8300000, guid: 840ed820092ab4fa1869472915c29790, type: 3}
+  - stageName: Stage22
+    bgmClip: {fileID: 8300000, guid: 33938db48b2e143df8d31e6fc7e13d14, type: 3}
+  - stageName: Stage23
+    bgmClip: {fileID: 8300000, guid: 8dfcdb605acd241bc94f23f3b0bd0620, type: 3}
+  - stageName: Stage24
+    bgmClip: {fileID: 8300000, guid: 5150f0417cb6f4e8c8c9dfbb9f105b33, type: 3}
+  - stageName: Stage25
+    bgmClip: {fileID: 8300000, guid: b69dfd2e9c3774ea2887e5a658077656, type: 3}
+  - stageName: Stage26
+    bgmClip: {fileID: 8300000, guid: 3aeb57e8156da428abbf25d1ca725921, type: 3}
+  - stageName: Stage27
+    bgmClip: {fileID: 8300000, guid: 5d25425a99a6a4cbeb552eadbe944bae, type: 3}
+  - stageName: Stage28
+    bgmClip: {fileID: 8300000, guid: b1b9f5d82de354f7ab79975913852506, type: 3}
+  - stageName: Stage29
+    bgmClip: {fileID: 8300000, guid: 33938db48b2e143df8d31e6fc7e13d14, type: 3}
+  - stageName: Stage30
+    bgmClip: {fileID: 8300000, guid: 3aeb57e8156da428abbf25d1ca725921, type: 3}
+  - stageName: Ending
+    bgmClip: {fileID: 8300000, guid: 9a3acc35491bc4e37ab763e4339271c6, type: 3}
 --- !u!1 &2062934720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3234,6 +3356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2062934721}
+  - component: {fileID: 2062934722}
   m_Layer: 0
   m_Name: BannerAdManager
   m_TagString: Untagged
@@ -3256,6 +3379,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062934722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062934720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d677f0d68badb404389953a05f55ee13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &37759642194465707
 Transform:
   m_ObjectHideFlags: 0
@@ -11149,3 +11284,4 @@ SceneRoots:
   - {fileID: 842275682176509189}
   - {fileID: 710523919}
   - {fileID: 2062934721}
+  - {fileID: 912995927}

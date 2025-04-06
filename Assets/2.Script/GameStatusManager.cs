@@ -7,10 +7,12 @@ public class GameStatusManager : MonoBehaviour
 {
 
     public enum GameStatus {
+
         Play,
         GameOver,
         Goal,
         Pause,
+
     }
 
     // 現在のゲームステータスを格納
@@ -25,11 +27,18 @@ public class GameStatusManager : MonoBehaviour
     private void Start() {
 
         Application.targetFrameRate = 60;
-        Scene thisScene = SceneManager.GetActiveScene();
-        if (thisScene.name != "Stage1") {
+
+
+        //チュートリアルを表示させるためステージ1だけすぐにプレイにしてない
+        string currentStagenameScene = SceneManager.GetActiveScene().name;
+        if (currentStagenameScene != "Stage1") {
 
             ChangeStatus(GameStatus.Play);
 
+        }
+
+        if (AudioManager.Instance != null) {
+            AudioManager.Instance.PlayBGMForStage(currentStagenameScene);
         }
 
     }

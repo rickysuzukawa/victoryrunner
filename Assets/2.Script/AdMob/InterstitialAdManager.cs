@@ -91,6 +91,7 @@ public class InterstitialAdManager : MonoBehaviour
 
         } else {
 
+            ReloadScene();
             Debug.LogError("Interstitial ad cannot be shown.");
 
         }
@@ -117,7 +118,9 @@ public class InterstitialAdManager : MonoBehaviour
 
             Debug.Log("インタースティシャル広告が開きました");
 
-            //AudioManager.Instance.VolumeDown();
+            if (AudioManager.Instance != null) {
+                AudioManager.Instance.MuteAll();
+            }
 
         };
         // Raised when the ad closed full screen content.
@@ -125,11 +128,9 @@ public class InterstitialAdManager : MonoBehaviour
 
             Debug.Log("インタースティシャル広告が閉じられました");
 
-            //if (AudioManager.Instance != null) {
-
-            //    AudioManager.Instance.VolumeUp();
-
-            //}
+            if (AudioManager.Instance != null) {
+                AudioManager.Instance.UnmuteAll();
+            }
 
             ReloadScene();
 
@@ -139,11 +140,9 @@ public class InterstitialAdManager : MonoBehaviour
             Debug.LogError("Interstitial ad failed to open full screen content " +
                            "with error : " + error);
 
-            //if (AudioManager.Instance != null) {
-
-            //    AudioManager.Instance.VolumeUp();
-
-            //}
+            if (AudioManager.Instance != null) {
+                AudioManager.Instance.UnmuteAll();
+            }
 
             ReloadScene();
         };

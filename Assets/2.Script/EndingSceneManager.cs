@@ -8,6 +8,12 @@ public class EndingSceneManager : MonoBehaviour
 
     private void Start() {
         Invoke("LoadStage1Scene", 25.0f);
+
+        string currentStageName = SceneManager.GetActiveScene().name;
+
+        if (AudioManager.Instance != null) {
+            AudioManager.Instance.PlayBGMForStage(currentStageName);
+        }
     }
 
     void LoadStage1Scene() {

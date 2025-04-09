@@ -12,7 +12,7 @@ public class InterstitialAdManager : MonoBehaviour
 #if UNITY_IPHONE
 
     // 【本番用】AdMobのインタースティシャル広告ID
-    //private string adUnitId = "";
+    //private string adUnitId = "ca-app-pub-6297510004657467/8500082753";
 
     // 【テスト用】AdMobのインタースティシャル広告ID
     private string adUnitId = "ca-app-pub-3940256099942544/4411468910";

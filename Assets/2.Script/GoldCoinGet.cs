@@ -14,6 +14,7 @@ public class GoldCoinGet : MonoBehaviour {
 
         if (other.gameObject.tag == "AttackHand") {
 
+            //コインの加算
             CoinGetCounter.instance.UpdateCoinDisplay();
 
             ParticleSystem newParticle = Instantiate(particle);

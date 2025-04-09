@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class RewardButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public void ShowReward() {
+
+        RewardAdManager.Instance.ShowRewardAd();
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Vibration() {
+
+        //バイブ振動
+        HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Light);
+
     }
 }

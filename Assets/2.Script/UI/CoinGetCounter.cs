@@ -26,13 +26,6 @@ public class CoinGetCounter : MonoBehaviour
 
     }
 
-    //void Start() {
-
-    //    totalCoin = PlayerPrefs.GetInt("TotalCoin");
-    //    coinCounterText.text = $"<sprite=0> {totalCoin.ToString()}";
-
-    //}
-
     public void UpdateCoinDisplay() {
 
         if (totalCoin >= maxCoinValue) return;

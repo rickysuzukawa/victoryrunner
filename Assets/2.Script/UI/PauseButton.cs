@@ -30,7 +30,7 @@ public class PauseButton : MonoBehaviour
         this.gameObject.SetActive(false);
         // 一時停止パネルを表示
         pausePanel.SetActive(true);
-        Time.timeScale = 0f;
+
         //ここにゲームステータスPauseへの変更処理を入れる
         var gameStatusManager = FindObjectOfType<GameStatusManager>();
         gameStatusManager.StagePauseAction();

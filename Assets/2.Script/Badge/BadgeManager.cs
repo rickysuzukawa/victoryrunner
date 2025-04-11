@@ -132,8 +132,11 @@ public class BadgeManager : MonoBehaviour
 
     //ここにCanvas(BadgeGet)内のPanel表示非表示処理やバッジのくるくるゲットアニメーション、紙吹雪パーティクルの再生など
     void ShowBadgeEffect(Sprite badgeSprite) {
+
         //イメージ画像にbadgeSpriteを設定
         badgeImage.sprite = badgeSprite;
+        badgeImage.rectTransform.localEulerAngles = Vector3.zero;
+
         //イメージのスケールを0に設定
         badgeDisplay.localScale = Vector3.zero;
         badgeGetDisplayPanel.gameObject.SetActive(true);
@@ -145,7 +148,8 @@ public class BadgeManager : MonoBehaviour
         // DOTweenで拡大＆回転アニメーション
         Sequence sequence = DOTween.Sequence();
         sequence.Append(badgeDisplay.DOScale(6.0f, 1.5f).SetEase(Ease.OutBack)); // 拡大
-        sequence.Join(badgeDisplay.DORotate(new Vector3(0, 360f, 0), 0.2f, RotateMode.FastBeyond360)
+        badgeImage.gameObject.SetActive(true);
+        sequence.Join(badgeDisplay.DORotate(new Vector3(0, 0, 360f), 0.2f, RotateMode.FastBeyond360)
             .SetEase(Ease.Linear)
             .SetLoops(5, LoopType.Restart)); // 回転を繰り返す
 
@@ -157,6 +161,7 @@ public class BadgeManager : MonoBehaviour
             badgeGetDisplayPanel.gameObject.SetActive(false);
             UpdateBadgeUI();
         });
+
     }
 
     //バッジ取得した後のキラキラエフェクト。取得アニメーションのあとにキラキラさせたかったためコルーチンで処理しています。

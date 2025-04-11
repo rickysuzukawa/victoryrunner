@@ -13,8 +13,8 @@ public class ResumeButton : MonoBehaviour
         // 一時停止パネルを非表示
         pausePanel.SetActive(false);
         pauseButton.SetActive(true);
+
         // ゲームの時間を再開
-        Time.timeScale = 1f; // ゲームを再開
         var gameStatusManager = FindObjectOfType<GameStatusManager>();
         gameStatusManager.StagePlayAction();
     }

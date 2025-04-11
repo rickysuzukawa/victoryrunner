@@ -8,6 +8,7 @@ public class GameStatusManager : MonoBehaviour
 
     public enum GameStatus {
 
+        Ready,
         Play,
         GameOver,
         Goal,
@@ -24,29 +25,48 @@ public class GameStatusManager : MonoBehaviour
 
     public float clearPanelShowDelayTime = 4.0f;
 
+    private void Awake() {
+
+        ChangeStatus(GameStatus.Ready);
+
+    }
+
     private void Start() {
 
         Application.targetFrameRate = 60;
 
 
         //チュートリアルを表示させるためステージ1だけすぐにプレイにしてない
+        //if (currentStagenameScene != "Stage1") {
+
+        //    ChangeStatus(GameStatus.Play);
+
+        //}
+
         string currentStagenameScene = SceneManager.GetActiveScene().name;
-        if (currentStagenameScene != "Stage1") {
-
-            ChangeStatus(GameStatus.Play);
-
-        }
-
         if (AudioManager.Instance != null) {
             AudioManager.Instance.PlayBGMForStage(currentStagenameScene);
         }
 
     }
 
+    private void Update() {
+
+        Debug.Log(CurrentStatus);
+
+    }
+
+    public void StageReadyAction() {
+
+        ChangeStatus(GameStatus.Ready);
+        Time.timeScale = 1.0f;
+
+    }
+
     public void StagePlayAction() {
 
-        //pauseButton.SetActive(true);
         ChangeStatus(GameStatus.Play);
+        Time.timeScale = 1.0f;
 
     }
 
@@ -69,8 +89,8 @@ public class GameStatusManager : MonoBehaviour
 
     public void StagePauseAction() {
 
-        //pauseButton.SetActive(false);
         ChangeStatus(GameStatus.Pause);
+        Time.timeScale = 0f;
 
     }
 
@@ -78,6 +98,7 @@ public class GameStatusManager : MonoBehaviour
 
         Scene thisScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(thisScene.name);
+        Time.timeScale = 1.0f;
 
     }
 

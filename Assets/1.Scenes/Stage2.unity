@@ -15660,6 +15660,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerMoveObject
       objectReference: {fileID: 0}
+    - target: {fileID: 2274769467973297071, guid: a22ed8523fd1145a8b7556626dcb5ba4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.953717
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274769467973297071, guid: a22ed8523fd1145a8b7556626dcb5ba4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.30070576
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274769467973297071, guid: a22ed8523fd1145a8b7556626dcb5ba4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 3810866234492932819, guid: a22ed8523fd1145a8b7556626dcb5ba4, type: 3}
       propertyPath: goalScript
       value: 

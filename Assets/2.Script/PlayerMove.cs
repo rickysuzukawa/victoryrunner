@@ -52,8 +52,6 @@ public class PlayerMove : MonoBehaviour
 
     void Update() {
 
-        
-        
         //プレイヤーの移動処理
         var playerVelocity = playerRb.velocity.magnitude;
         

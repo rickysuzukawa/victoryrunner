@@ -24,11 +24,6 @@ public class BadgePanelShowCloseButton : MonoBehaviour
     public void HideBadgePanel() {
 
         badgePanel.SetActive(false);
-        Time.timeScale = 1.0f;
-
-        //ここにゲームステータスPlayへの変更処理を入れる
-        var gameStatusManager = FindObjectOfType<GameStatusManager>();
-        gameStatusManager?.ChangeStatus(GameStatusManager.GameStatus.Play);
 
     }
 }

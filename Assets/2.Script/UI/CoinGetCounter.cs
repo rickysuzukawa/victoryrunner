@@ -9,7 +9,7 @@ public class CoinGetCounter : MonoBehaviour
 
     public static CoinGetCounter instance;
     public TMP_Text coinCounterText;
-    private int totalCoin = 0;
+    private int totalCoin = 15;
     private int maxCoinValue = 999;
 
     void Awake() {
@@ -24,6 +24,8 @@ public class CoinGetCounter : MonoBehaviour
 
         }
 
+        //現在テスト中なのでここを後で消す
+        PlayerPrefs.SetInt("TotalCoin", totalCoin);
     }
 
     public void UpdateCoinDisplay() {

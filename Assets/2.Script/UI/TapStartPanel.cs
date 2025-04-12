@@ -18,9 +18,6 @@ public class TapStartPanel : MonoBehaviour, IPointerClickHandler {
 
         pauseBtn.SetActive(false);
 
-        var gameStatusManager = FindObjectOfType<GameStatusManager>();
-        gameStatusManager.StageReadyAction();
-
     }
 
 

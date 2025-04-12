@@ -9,7 +9,7 @@ public class PauseButton : MonoBehaviour
 
     public GameObject pausePanel;
 
-    private void Start() {
+    private void Awake() {
 
         pausePanel.SetActive(false);
 

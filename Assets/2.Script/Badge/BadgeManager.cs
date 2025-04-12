@@ -17,7 +17,8 @@ public class BadgeManager : MonoBehaviour
     public List<ParticleSystem> badgeShiningEffects;    //キラキラ光らせるエフェクト
 
     public GameObject badgeGetDisplayPanel; //バッジ取得時のパネル(背景黒くするため)
-    public RectTransform badgeDisplay;      // 中央に表示するバッジImage用のRectTransform
+    public Animator badgeImageAnimator;
+    //public RectTransform badgeDisplay;      // 中央に表示するバッジImage用のRectTransform
     public Image badgeImage;                // 表示するバッジ画像
     public ParticleSystem confettiEffect;   // 紙吹雪のパーティクル
 
@@ -32,7 +33,7 @@ public class BadgeManager : MonoBehaviour
         UpdateBadgeUI();
 
         badgeGetDisplayPanel.gameObject.SetActive(false);
-        badgeDisplay.gameObject.SetActive(false);           // 初期非表示
+        //badgeDisplay.gameObject.SetActive(false);           // 初期非表示
         confettiEffect.Stop();                              // パーティクル停止
 
         audioSource = GetComponent<AudioSource>(); // AudioSource を取得
@@ -133,36 +134,66 @@ public class BadgeManager : MonoBehaviour
     //ここにCanvas(BadgeGet)内のPanel表示非表示処理やバッジのくるくるゲットアニメーション、紙吹雪パーティクルの再生など
     void ShowBadgeEffect(Sprite badgeSprite) {
 
-        //イメージ画像にbadgeSpriteを設定
         badgeImage.sprite = badgeSprite;
+        badgeImage.gameObject.SetActive(true);
         badgeImage.rectTransform.localEulerAngles = Vector3.zero;
+        badgeImage.rectTransform.localScale = Vector3.zero;
 
-        //イメージのスケールを0に設定
-        badgeDisplay.localScale = Vector3.zero;
-        badgeGetDisplayPanel.gameObject.SetActive(true);
-        badgeDisplay.gameObject.SetActive(true);
-
-        // 紙吹雪のパーティクル再生
+        badgeGetDisplayPanel.SetActive(true);
         confettiEffect.Play();
 
-        // DOTweenで拡大＆回転アニメーション
-        Sequence sequence = DOTween.Sequence();
-        sequence.Append(badgeDisplay.DOScale(6.0f, 1.5f).SetEase(Ease.OutBack)); // 拡大
-        badgeImage.gameObject.SetActive(true);
-        sequence.Join(badgeDisplay.DORotate(new Vector3(0, 0, 360f), 0.2f, RotateMode.FastBeyond360)
-            .SetEase(Ease.Linear)
-            .SetLoops(5, LoopType.Restart)); // 回転を繰り返す
+        // アニメーショントリガーを発火
+        badgeImageAnimator.SetTrigger("PlaySpin");
 
-        sequence.AppendInterval(3.5f); // 表示時間
-        sequence.Append(badgeDisplay.DOScale(0f, 0.5f).SetEase(Ease.InBack)); // 縮小
+        // 3秒後に非表示に（アニメ完了後）
+        Invoke(nameof(HideBadgePopup), 3f);
 
-        sequence.OnComplete(() => {
-            badgeDisplay.gameObject.SetActive(false);
-            badgeGetDisplayPanel.gameObject.SetActive(false);
-            UpdateBadgeUI();
-        });
 
+
+
+
+
+
+
+
+
+
+        //badgeImage.sprite = badgeSprite;
+
+        //// 傾き補正
+        //badgeImage.rectTransform.localEulerAngles = Vector3.zero;
+        //badgeImage.rectTransform.localScale = Vector3.zero;
+        //badgeImage.rectTransform.localScale = new Vector3(5.0f, 5.0f, 5.0f);
+        //badgeImage.gameObject.SetActive(true);
+
+        //badgeGetDisplayPanel.SetActive(true);
+
+        //// パーティクル再生
+        //confettiEffect.Play();
+
+        // DOTweenアニメーション（Image本体を回転させる！）
+        //Sequence sequence = DOTween.Sequence();
+        //sequence.Append(badgeImage.rectTransform.DOScale(5.5f, 1.0f).SetEase(Ease.OutBack));
+        //sequence.Join(badgeImage.rectTransform.DORotate(new Vector3(0, 0, 360f), 0.3f, RotateMode.FastBeyond360)
+        //    .SetEase(Ease.Linear)
+        //    .SetLoops(4, LoopType.Restart));
+
+        //sequence.AppendInterval(2.0f);
+        //sequence.Append(badgeImage.rectTransform.DOScale(0f, 0.4f).SetEase(Ease.InBack));
+
+        //sequence.OnComplete(() => {
+        //    badgeImage.gameObject.SetActive(false);
+        //    badgeGetDisplayPanel.SetActive(false);
+        //    UpdateBadgeUI();
+        //});
     }
+
+    void HideBadgePopup() {
+        badgeImage.gameObject.SetActive(false);
+        badgeGetDisplayPanel.SetActive(false);
+        UpdateBadgeUI();
+    }
+
 
     //バッジ取得した後のキラキラエフェクト。取得アニメーションのあとにキラキラさせたかったためコルーチンで処理しています。
     void ShowBadgeShiningEffect() {

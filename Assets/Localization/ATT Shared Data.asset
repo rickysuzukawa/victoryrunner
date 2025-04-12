@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: ATTtext
     m_Metadata:
       m_Items: []
+  - m_Id: 128602233364480
+    m_Key: TutorialText
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

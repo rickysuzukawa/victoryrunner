@@ -9,6 +9,8 @@ public class InterstitialAdManager : MonoBehaviour
 {
     private InterstitialAd _interstitialAd;
 
+    private bool isBgmOn = true;
+
 #if UNITY_IPHONE
 
     // 【本番用】AdMobのインタースティシャル広告ID
@@ -35,6 +37,9 @@ public class InterstitialAdManager : MonoBehaviour
 
         MobileAds.Initialize(initStatus => { });
         LoadInterstitialAd();
+
+        // 初期状態をロード（保存されていれば）
+        isBgmOn = PlayerPrefs.GetInt("BGM", 1) == 1;
 
     }
 
@@ -75,6 +80,8 @@ public class InterstitialAdManager : MonoBehaviour
     public void ShowInterstitialAd() {
 
         adCounter++;
+
+        isBgmOn = PlayerPrefs.GetInt("BGM", 1) == 1;
 
         if (_interstitialAd == null) {
 
@@ -128,9 +135,14 @@ public class InterstitialAdManager : MonoBehaviour
 
             Debug.Log("インタースティシャル広告が閉じられました");
 
-            if (AudioManager.Instance != null) {
-                AudioManager.Instance.UnmuteAll();
+            if (isBgmOn == true) {
+
+                if (AudioManager.Instance != null) {
+                    AudioManager.Instance.UnmuteAll();
+                }
+
             }
+            
 
             ReloadScene();
 
@@ -140,8 +152,12 @@ public class InterstitialAdManager : MonoBehaviour
             Debug.LogError("Interstitial ad failed to open full screen content " +
                            "with error : " + error);
 
-            if (AudioManager.Instance != null) {
-                AudioManager.Instance.UnmuteAll();
+            if (isBgmOn == true) {
+
+                if (AudioManager.Instance != null) {
+                    AudioManager.Instance.UnmuteAll();
+                }
+
             }
 
             ReloadScene();

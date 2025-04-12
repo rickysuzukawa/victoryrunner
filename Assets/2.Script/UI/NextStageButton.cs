@@ -23,8 +23,6 @@ public class NextStageButton : MonoBehaviour
     //NextStageButtonを押した際のアクション
     public void LoadNextScene() {
 
-        Time.timeScale = 1.0f;
-
         //現在のステージ数と最終ステージを確認
         if (currentStage != finalStageNum) {
 
@@ -48,6 +46,13 @@ public class NextStageButton : MonoBehaviour
         nowSceneName = SceneManager.GetActiveScene().name;
         stageNumString = nowSceneName.Substring(5);
         currentStage = int.Parse(stageNumString);
+
+    }
+
+    public void Vibration() {
+
+        //バイブ振動
+        HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Light);
 
     }
 }

@@ -12,4 +12,11 @@ public class BadgePanelCloseButton : MonoBehaviour
         badgePanel.SetActive(false);
 
     }
+
+    public void Vibration() {
+
+        //バイブ振動
+        HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Light);
+
+    }
 }

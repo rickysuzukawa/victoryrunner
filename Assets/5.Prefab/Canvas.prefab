@@ -168,10 +168,10 @@ RectTransform:
   - {fileID: 1383467295593260731}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 539.99994, y: -210}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8113140798904355018
 CanvasRenderer:
@@ -590,7 +590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4939035210518418650
 RectTransform:
   m_ObjectHideFlags: 0
@@ -761,10 +761,10 @@ RectTransform:
   - {fileID: 7472265310146663986}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 224.99994, y: -1110}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6921261777377912206
 CanvasRenderer:
@@ -821,7 +821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &929211254445987275
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1387,13 +1387,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: PlayOneShot
-          m_Mode: 2
+        - m_Target: {fileID: 7962044925736385337}
+          m_TargetAssemblyTypeName: NextStageButton, Assembly-CSharp
+          m_MethodName: Vibration
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 8300000, guid: 23db4a79a1b6d4d27badbefad9af11b7, type: 3}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1922,6 +1922,7 @@ GameObject:
   - component: {fileID: 7439717120972308846}
   - component: {fileID: 3915530716494854651}
   - component: {fileID: 1621270414241773396}
+  - component: {fileID: 9042035085572912178}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -2055,6 +2056,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 733046007829743508}
+--- !u!114 &9042035085572912178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827845479278164529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1621270414241773396}
+          m_TargetAssemblyTypeName: PauseButton, Assembly-CSharp
+          m_MethodName: Vibration
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1831450449528874035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,10 +2119,10 @@ RectTransform:
   - {fileID: 2043355771956226508}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 224.99994, y: -660}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5659068101717245418
 CanvasRenderer:
@@ -2175,6 +2205,8 @@ GameObject:
   - component: {fileID: 8229200157038851916}
   - component: {fileID: 771427218459248518}
   - component: {fileID: 2550576466722094399}
+  - component: {fileID: 6221111654516420993}
+  - component: {fileID: 5281758912604835313}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2284,6 +2316,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6221111654516420993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2319903363879786316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5281758912604835313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2319903363879786316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6221111654516420993}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2440771100090684525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,6 +2634,8 @@ GameObject:
   - component: {fileID: 3104226018418745834}
   - component: {fileID: 6776807114110718011}
   - component: {fileID: 4871805036219976182}
+  - component: {fileID: 1910593530876870933}
+  - component: {fileID: 6086307968973189147}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2670,6 +2745,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1910593530876870933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667906910475166470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6086307968973189147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667906910475166470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1910593530876870933}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &3716371674156578636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,6 +3011,8 @@ GameObject:
   - component: {fileID: 5655860976661964139}
   - component: {fileID: 3812993626174454463}
   - component: {fileID: 1807811973752948829}
+  - component: {fileID: 778623889094658114}
+  - component: {fileID: 2929488858323261674}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3004,6 +3122,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &778623889094658114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3852723173834752761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2929488858323261674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3852723173834752761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 778623889094658114}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &4264113605049391404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,6 +3322,7 @@ GameObject:
   - component: {fileID: 5242760601608360591}
   - component: {fileID: 4055952341910117237}
   - component: {fileID: 8813231282375034979}
+  - component: {fileID: 9068352432718731327}
   m_Layer: 5
   m_Name: CloseButton
   m_TagString: Untagged
@@ -3297,6 +3457,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   badgePanel: {fileID: 6651964919083743399}
+--- !u!114 &9068352432718731327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395270859179170060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8813231282375034979}
+          m_TargetAssemblyTypeName: BadgePanelCloseButton, Assembly-CSharp
+          m_MethodName: Vibration
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &4418956887960496568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3309,6 +3498,8 @@ GameObject:
   - component: {fileID: 2089322294645113536}
   - component: {fileID: 3563285227963643153}
   - component: {fileID: 5486264957899034095}
+  - component: {fileID: 1023962325114965267}
+  - component: {fileID: 3349160327753122687}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3418,6 +3609,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1023962325114965267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4418956887960496568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3349160327753122687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4418956887960496568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1023962325114965267}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &4660120837753177170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,6 +3980,8 @@ GameObject:
   - component: {fileID: 1983472816805146753}
   - component: {fileID: 8041125152488427463}
   - component: {fileID: 6525911318692365935}
+  - component: {fileID: 8023458922309644620}
+  - component: {fileID: 5505890321499745626}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3857,6 +4091,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8023458922309644620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5236447736404747110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5505890321499745626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5236447736404747110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8023458922309644620}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5254313096741943535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,10 +4300,10 @@ RectTransform:
   - {fileID: 7574211912647471361}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 224.99994, y: -210}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7178051095389522703
 CanvasRenderer:
@@ -4214,6 +4489,8 @@ GameObject:
   - component: {fileID: 109939449711828124}
   - component: {fileID: 2139238296407003115}
   - component: {fileID: 5645606892493064229}
+  - component: {fileID: 6923220514091288222}
+  - component: {fileID: 1677829338287797374}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4323,6 +4600,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6923220514091288222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5511389520252590284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1677829338287797374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5511389520252590284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6923220514091288222}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5924968338075553511
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,10 +4675,10 @@ RectTransform:
   - {fileID: 973713530045603907}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 854.99994, y: -210}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &421411431074236444
 CanvasRenderer:
@@ -4978,6 +5296,7 @@ GameObject:
   - component: {fileID: 764370902017266983}
   - component: {fileID: 5967674498997251396}
   - component: {fileID: 2105824296660526780}
+  - component: {fileID: 7889657490638689462}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -5114,6 +5433,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 733046007829743508}
   pauseButton: {fileID: 1827845479278164529}
+--- !u!114 &7889657490638689462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6092767188741834938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2105824296660526780}
+          m_TargetAssemblyTypeName: ResumeButton, Assembly-CSharp
+          m_MethodName: Vibration
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6152446644217101121
 GameObject:
   m_ObjectHideFlags: 0
@@ -5126,6 +5474,8 @@ GameObject:
   - component: {fileID: 5179367145331336692}
   - component: {fileID: 4563532391572661691}
   - component: {fileID: 5907577340344275844}
+  - component: {fileID: 5624596447960324424}
+  - component: {fileID: 440108300429191529}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5235,6 +5585,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5624596447960324424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152446644217101121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &440108300429191529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6152446644217101121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5624596447960324424}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6234951812377197216
 GameObject:
   m_ObjectHideFlags: 0
@@ -10345,8 +10736,9 @@ GameObject:
   - component: {fileID: 500272427719300662}
   - component: {fileID: 7526605776577031960}
   - component: {fileID: 8188425950823090720}
+  - component: {fileID: 1725042335157990876}
   m_Layer: 5
-  m_Name: BadgePanelShowButton (1)
+  m_Name: BadgePanelShowButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10479,6 +10871,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   badgePanel: {fileID: 6651964919083743399}
   badgeManager: {fileID: 2377401688050819112}
+--- !u!114 &1725042335157990876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6588748978787264650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8188425950823090720}
+          m_TargetAssemblyTypeName: BadgePanelShowCloseButton, Assembly-CSharp
+          m_MethodName: Vibration
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6651964919083743399
 GameObject:
   m_ObjectHideFlags: 0
@@ -10496,7 +10917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1598952906689041556
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11039,10 +11460,10 @@ RectTransform:
   - {fileID: 6940973335781147673}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 854.99994, y: -1110}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3012962069694779035
 CanvasRenderer:
@@ -11234,18 +11655,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: PlayOneShot
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 8300000, guid: 23db4a79a1b6d4d27badbefad9af11b7, type: 3}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 3135633096960890314}
           m_TargetAssemblyTypeName: RestartButton, Assembly-CSharp
           m_MethodName: Vibration
@@ -11282,6 +11691,8 @@ GameObject:
   - component: {fileID: 5700715817110675738}
   - component: {fileID: 1076679276675278800}
   - component: {fileID: 6407937609244686008}
+  - component: {fileID: 525095888411728556}
+  - component: {fileID: 8940480931074121585}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -11391,6 +11802,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &525095888411728556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012445719324799484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8940480931074121585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012445719324799484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 525095888411728556}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8036318491483300239
 GameObject:
   m_ObjectHideFlags: 0
@@ -11788,6 +12240,7 @@ GameObject:
   - component: {fileID: 8912732566056523964}
   - component: {fileID: 6123824923201442879}
   - component: {fileID: 3065195438057527551}
+  - component: {fileID: 6925290198871334976}
   m_Layer: 5
   m_Name: BGMOnOffButton
   m_TagString: Untagged
@@ -11923,6 +12376,35 @@ MonoBehaviour:
   bgmOnSprite: {fileID: 21300000, guid: 448bbe87caf724187833c04ca997078a, type: 3}
   bgmOffSprite: {fileID: 21300000, guid: 6802f02f50f28400c9009ae8963c6c4a, type: 3}
   buttonImage: {fileID: 8912732566056523964}
+--- !u!114 &6925290198871334976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8247610847522123834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3065195438057527551}
+          m_TargetAssemblyTypeName: BGMManager, Assembly-CSharp
+          m_MethodName: Vibration
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8265027501780935615
 GameObject:
   m_ObjectHideFlags: 0
@@ -12111,10 +12593,10 @@ RectTransform:
   - {fileID: 3893541483316270585}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 539.99994, y: -1110}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1581772122480576713
 CanvasRenderer:
@@ -12188,10 +12670,10 @@ RectTransform:
   - {fileID: 1228538237259701721}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 539.99994, y: -660}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8393898882424526797
 CanvasRenderer:
@@ -12243,6 +12725,8 @@ GameObject:
   - component: {fileID: 203755641200323206}
   - component: {fileID: 7177031287521355198}
   - component: {fileID: 3443124834553401006}
+  - component: {fileID: 5124282058601891962}
+  - component: {fileID: 6495083832824778213}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -12352,6 +12836,47 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5124282058601891962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967668253490124228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6495083832824778213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967668253490124228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5124282058601891962}
+          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
+          m_MethodName: VibrationAction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &9108782806941989606
 GameObject:
   m_ObjectHideFlags: 0
@@ -12386,10 +12911,10 @@ RectTransform:
   - {fileID: 4190368680694904737}
   m_Father: {fileID: 7463314105583699617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 854.99994, y: -660}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4919579371724908667
 CanvasRenderer:

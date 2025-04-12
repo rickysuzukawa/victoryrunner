@@ -19,5 +19,11 @@ public class ResumeButton : MonoBehaviour
         gameStatusManager.StagePlayAction();
     }
 
+    public void Vibration() {
+
+        //バイブ振動
+        HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Light);
+
+    }
 
 }

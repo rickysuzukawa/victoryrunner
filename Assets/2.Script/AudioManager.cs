@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class AudioManager : MonoBehaviour {
     public static AudioManager Instance;
 
+    private bool isBgmOn = true;
+
     [System.Serializable]
     public class StageBGM {
         public string stageName;         // ステージ名（例: "Stage1"）
@@ -29,6 +31,18 @@ public class AudioManager : MonoBehaviour {
     private void Start() {
 
         PlayBGMForStage("Title");
+        // 初期状態をロード（保存されていれば）
+        isBgmOn = PlayerPrefs.GetInt("BGM", 1) == 1;
+
+        if (isBgmOn == true) {
+
+            UnmuteAll();
+
+        } else {
+
+            MuteAll();
+
+        }
     }
 
     // 指定ステージ名のBGMを再生する

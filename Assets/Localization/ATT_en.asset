@@ -22,6 +22,11 @@ MonoBehaviour:
     m_Localized: Click Allow Tracking to display optimized  advertisements
     m_Metadata:
       m_Items: []
+  - m_Id: 128602233364480
+    m_Localized: 'Help the boy avoid hitting people and obstacles by operating the
+      hand. '
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

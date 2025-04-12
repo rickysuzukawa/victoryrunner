@@ -145,6 +145,8 @@ public class BadgeManager : MonoBehaviour
         // アニメーショントリガーを発火
         badgeImageAnimator.SetTrigger("PlaySpin");
 
+        HapticFeedback.NotificationOccurred(NotificationFeedbackStyle.Success);
+
         // 3秒後に非表示に（アニメ完了後）
         Invoke(nameof(HideBadgePopup), 3f);
 

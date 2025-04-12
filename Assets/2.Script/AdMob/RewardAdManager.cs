@@ -49,6 +49,8 @@ public class RewardAdManager : MonoBehaviour
     //ステージを増やす際はかならずここの数字を変更すること！！
     private int finalStageNum = 30;
 
+    private bool isBgmOn = true;
+
     private void Awake() {
 
         if (Instance == null) {
@@ -80,9 +82,11 @@ public class RewardAdManager : MonoBehaviour
         //現在のステージ番号を取得する(左から5文字目)
         nowSceneName = SceneManager.GetActiveScene().name;
 
-
         stageNumString = nowSceneName.Substring(5);
         stageNum = int.Parse(stageNumString);
+
+        // 初期状態をロード（保存されていれば）
+        isBgmOn = PlayerPrefs.GetInt("BGM", 1) == 1;
 
     }
 
@@ -170,6 +174,8 @@ public class RewardAdManager : MonoBehaviour
 
         LoadGems();
 
+        isBgmOn = PlayerPrefs.GetInt("BGM", 1) == 1;
+
         const string rewardMsg =
         "Rewarded ad rewarded the user. Type: {0}, amount: {1}.";
 
@@ -219,8 +225,12 @@ public class RewardAdManager : MonoBehaviour
         ad.OnAdFullScreenContentClosed += () => {
             Debug.Log("Rewarded ad full screen content closed.");
 
-            if (AudioManager.Instance != null) {
-                AudioManager.Instance.UnmuteAll();
+            if (isBgmOn == true) {
+
+                if (AudioManager.Instance != null) {
+                    AudioManager.Instance.UnmuteAll();
+                }
+
             }
 
             //報酬実行
@@ -232,9 +242,16 @@ public class RewardAdManager : MonoBehaviour
             Debug.LogError("Rewarded ad failed to open full screen content " +
                            "with error : " + error);
 
-            if (AudioManager.Instance != null) {
-                AudioManager.Instance.UnmuteAll();
+            if (isBgmOn == true) {
+
+                if (AudioManager.Instance != null) {
+                    AudioManager.Instance.UnmuteAll();
+                }
+
             }
+
+            LoadNextStageScene();
+
         };
     }
 
@@ -245,10 +262,6 @@ public class RewardAdManager : MonoBehaviour
 
             // Reload the ad so that we can show another as soon as possible.
             RequestRewardAd();
-
-            if (AudioManager.Instance != null) {
-                AudioManager.Instance.UnmuteAll();
-            }
         };
         // Raised when the ad failed to open full screen content.
         ad.OnAdFullScreenContentFailed += (AdError error) => {
@@ -257,10 +270,6 @@ public class RewardAdManager : MonoBehaviour
 
             // Reload the ad so that we can show another as soon as possible.
             RequestRewardAd();
-
-            if (AudioManager.Instance != null) {
-                AudioManager.Instance.UnmuteAll();
-            }
         };
     }
 

@@ -40,5 +40,13 @@ public class BGMManager : MonoBehaviour {
 
         }
     }
+
+
+    public void Vibration() {
+
+        //バイブ振動
+        HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Light);
+
+    }
 }
 

@@ -36,4 +36,10 @@ public class PauseButton : MonoBehaviour
         gameStatusManager.StagePauseAction();
     }
 
+    public void Vibration() {
+
+        //バイブ振動
+        HapticFeedback.ImpactOccurred(ImpactFeedbackStyle.Light);
+
+    }
 }

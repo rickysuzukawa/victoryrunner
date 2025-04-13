@@ -2193,6 +2193,152 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5142657112723963713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2136198510760247478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5347744870408758358}
+  - component: {fileID: 8168119279881519960}
+  - component: {fileID: 1302583670214468082}
+  - component: {fileID: 9209382648746819931}
+  - component: {fileID: 5478850961220347305}
+  m_Layer: 5
+  m_Name: ShareToXButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5347744870408758358
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136198510760247478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157154260369139914}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -266.7, y: 160}
+  m_SizeDelta: {x: 330, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8168119279881519960
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136198510760247478}
+  m_CullTransparentMesh: 1
+--- !u!114 &1302583670214468082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136198510760247478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4ab889aa8283e43558268727bb2f9069, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &9209382648746819931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136198510760247478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1302583670214468082}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5478850961220347305}
+        m_TargetAssemblyTypeName: XShareManager, Assembly-CSharp
+        m_MethodName: ShareScreenshotToX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5478850961220347305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136198510760247478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5894c768f22f3486bb0507c90e59bd2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shareHashtags: "#VictoryRunner #\u30D0\u30C3\u30B8\u53D6\u5F97"
 --- !u!1 &2319903363879786316
 GameObject:
   m_ObjectHideFlags: 0
@@ -10797,39 +10943,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   badges:
   - name: BronzeBadge1
-    price: 10
+    price: 25
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: a157a00157d97584ca5c4d04e83fd003, type: 3}
   - name: SilverBadge1
-    price: 25
+    price: 50
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: 0dbcbe9ae87931a4fa320eea72eda703, type: 3}
   - name: GoldBadge1
-    price: 60
+    price: 100
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: 67f703741d182ba48963696b81ea932d, type: 3}
   - name: BronzeBadge2
-    price: 100
+    price: 150
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: 5b0d9e2d2d98cdc4989968126b58c76b, type: 3}
   - name: SilverBadge2
-    price: 150
+    price: 260
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: 6545f4aa3e2baa644864b0da92a0a453, type: 3}
   - name: GoldBadge2
-    price: 250
+    price: 350
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: 513d4d54c09598d47b440fd36259cdaf, type: 3}
   - name: BronzeBadge3
-    price: 370
+    price: 500
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: 26a8fd4064480ef40a3b77c66cd3c3f6, type: 3}
   - name: SilverBadge3
-    price: 450
+    price: 700
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: 5603cf9f344b1b145bb59dee3e665a22, type: 3}
   - name: GoldBadge3
-    price: 600
+    price: 900
     isUnlocked: 0
     badgeSprite: {fileID: 21300000, guid: 8321feb6e9229734a9e478c266738462, type: 3}
   coinText: {fileID: 519271611609787504}
@@ -12153,12 +12299,13 @@ RectTransform:
   - {fileID: 7312650555309350351}
   - {fileID: 5520590859530747949}
   - {fileID: 7463314105583699617}
+  - {fileID: 5347744870408758358}
   m_Father: {fileID: 1598952906689041556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 75}
-  m_SizeDelta: {x: -100, y: -650}
+  m_AnchoredPosition: {x: 0, y: 24.999878}
+  m_SizeDelta: {x: -100, y: -550.0002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4863344458564842461
 CanvasRenderer:

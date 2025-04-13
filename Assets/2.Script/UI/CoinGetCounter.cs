@@ -10,7 +10,7 @@ public class CoinGetCounter : MonoBehaviour
     public static CoinGetCounter instance;
     public TMP_Text coinCounterText;
     private int totalCoin = 0;
-    private int maxCoinValue = 999;
+    private int maxCoinValue = 9999;
 
     void Awake() {
 

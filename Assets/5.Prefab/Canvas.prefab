@@ -2205,8 +2205,6 @@ GameObject:
   - component: {fileID: 8229200157038851916}
   - component: {fileID: 771427218459248518}
   - component: {fileID: 2550576466722094399}
-  - component: {fileID: 6221111654516420993}
-  - component: {fileID: 5281758912604835313}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2316,47 +2314,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6221111654516420993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2319903363879786316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5281758912604835313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2319903363879786316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6221111654516420993}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &2440771100090684525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,8 +2591,6 @@ GameObject:
   - component: {fileID: 3104226018418745834}
   - component: {fileID: 6776807114110718011}
   - component: {fileID: 4871805036219976182}
-  - component: {fileID: 1910593530876870933}
-  - component: {fileID: 6086307968973189147}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2745,47 +2700,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1910593530876870933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3667906910475166470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6086307968973189147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3667906910475166470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1910593530876870933}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &3716371674156578636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3011,8 +2925,6 @@ GameObject:
   - component: {fileID: 5655860976661964139}
   - component: {fileID: 3812993626174454463}
   - component: {fileID: 1807811973752948829}
-  - component: {fileID: 778623889094658114}
-  - component: {fileID: 2929488858323261674}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3122,47 +3034,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &778623889094658114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3852723173834752761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2929488858323261674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3852723173834752761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 778623889094658114}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &4264113605049391404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3498,8 +3369,6 @@ GameObject:
   - component: {fileID: 2089322294645113536}
   - component: {fileID: 3563285227963643153}
   - component: {fileID: 5486264957899034095}
-  - component: {fileID: 1023962325114965267}
-  - component: {fileID: 3349160327753122687}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3609,47 +3478,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1023962325114965267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4418956887960496568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3349160327753122687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4418956887960496568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1023962325114965267}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &4660120837753177170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,8 +3808,6 @@ GameObject:
   - component: {fileID: 1983472816805146753}
   - component: {fileID: 8041125152488427463}
   - component: {fileID: 6525911318692365935}
-  - component: {fileID: 8023458922309644620}
-  - component: {fileID: 5505890321499745626}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4091,47 +3917,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8023458922309644620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5236447736404747110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5505890321499745626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5236447736404747110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8023458922309644620}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &5254313096741943535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4489,8 +4274,6 @@ GameObject:
   - component: {fileID: 109939449711828124}
   - component: {fileID: 2139238296407003115}
   - component: {fileID: 5645606892493064229}
-  - component: {fileID: 6923220514091288222}
-  - component: {fileID: 1677829338287797374}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4600,47 +4383,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6923220514091288222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5511389520252590284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1677829338287797374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5511389520252590284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6923220514091288222}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &5924968338075553511
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,8 +5216,6 @@ GameObject:
   - component: {fileID: 5179367145331336692}
   - component: {fileID: 4563532391572661691}
   - component: {fileID: 5907577340344275844}
-  - component: {fileID: 5624596447960324424}
-  - component: {fileID: 440108300429191529}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5585,47 +5325,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5624596447960324424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6152446644217101121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &440108300429191529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6152446644217101121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 5624596447960324424}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &6234951812377197216
 GameObject:
   m_ObjectHideFlags: 0
@@ -5683,7 +5382,6 @@ GameObject:
   - component: {fileID: 6512954953285572295}
   - component: {fileID: 223079608200600998}
   - component: {fileID: 906267290081990967}
-  - component: {fileID: 7738567762545256566}
   m_Layer: 5
   m_Name: StageNumberText
   m_TagString: Untagged
@@ -5819,22 +5517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f25e4057d82b4434b8782c5072988ead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!111 &7738567762545256566
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6280681929371465464}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 8272e83e9e5be493091c00156de749ed, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 8272e83e9e5be493091c00156de749ed, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &6445730971214942783
 GameObject:
   m_ObjectHideFlags: 0
@@ -11691,8 +11373,6 @@ GameObject:
   - component: {fileID: 5700715817110675738}
   - component: {fileID: 1076679276675278800}
   - component: {fileID: 6407937609244686008}
-  - component: {fileID: 525095888411728556}
-  - component: {fileID: 8940480931074121585}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -11802,47 +11482,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &525095888411728556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8012445719324799484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8940480931074121585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8012445719324799484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 525095888411728556}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &8036318491483300239
 GameObject:
   m_ObjectHideFlags: 0
@@ -12725,8 +12364,6 @@ GameObject:
   - component: {fileID: 203755641200323206}
   - component: {fileID: 7177031287521355198}
   - component: {fileID: 3443124834553401006}
-  - component: {fileID: 5124282058601891962}
-  - component: {fileID: 6495083832824778213}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -12836,47 +12473,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5124282058601891962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8967668253490124228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f534526ca4b354524aa8bf7eff277cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6495083832824778213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8967668253490124228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 5124282058601891962}
-          m_TargetAssemblyTypeName: Vibration, Assembly-CSharp
-          m_MethodName: VibrationAction
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &9108782806941989606
 GameObject:
   m_ObjectHideFlags: 0

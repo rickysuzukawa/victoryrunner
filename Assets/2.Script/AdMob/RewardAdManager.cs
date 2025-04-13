@@ -116,6 +116,12 @@ public class RewardAdManager : MonoBehaviour
     public void AddGems(int amount) {
 
         totalCoin += amount;
+
+        // 上限チェック
+        if (totalCoin > 9999) {
+            totalCoin = 9999;
+        }
+
         SaveGems();
         UpdateGemUI(); // UI更新
 

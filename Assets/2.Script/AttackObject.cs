@@ -30,6 +30,9 @@ public class AttackObject : MonoBehaviour {
 
     private PlayerMove playerMove;
 
+    private GameObject gameStatusManager;
+    private GameStatusManager gameStatusManagerScript;
+
     private void Start() {
 
         rb = GetComponent<Rigidbody>();
@@ -46,6 +49,9 @@ public class AttackObject : MonoBehaviour {
 
         }
 
+        gameStatusManager = GameObject.Find("GameStatusManager");
+        gameStatusManagerScript = gameStatusManager.GetComponent<GameStatusManager>();
+
     }
 
     private void Update() {
@@ -60,11 +66,17 @@ public class AttackObject : MonoBehaviour {
 
             Vector3 force = new Vector3(dx, 0, dy) * mouse_sensitivity;
 
-            rb.AddForce(force, ForceMode.Force);
-
             rotationPower = 50f;
-            //ドラッグした分だけ回転反映
-            this.transform.Rotate(new Vector3(0f, dx * rotationPower, 0f));
+            
+
+            if (gameStatusManagerScript.CurrentStatus == GameStatusManager.GameStatus.Play) {
+
+                rb.AddForce(force, ForceMode.Force);
+
+                //ドラッグした分だけ回転反映
+                this.transform.Rotate(new Vector3(0f, dx * rotationPower, 0f));
+
+            }
 
         }
 
@@ -88,13 +100,18 @@ public class AttackObject : MonoBehaviour {
 
                 //ドラッグした分だけ移動反映
                 Vector3 force = new Vector3(deltaX, 0, deltaY) * touch_sensitivity;
-                rb.AddForce(force, ForceMode.Force);
+
 
                 rotationPower = 0.4f;
 
-                //ドラッグした分だけ回転反映
-                this.transform.Rotate(new Vector3(0f, deltaX * rotationPower, 0f));
 
+                if (gameStatusManagerScript.CurrentStatus == GameStatusManager.GameStatus.Play) {
+
+                    rb.AddForce(force, ForceMode.Force);
+
+                    //ドラッグした分だけ回転反映
+                    this.transform.Rotate(new Vector3(0f, deltaX * rotationPower, 0f));
+                }
             }
 
         }

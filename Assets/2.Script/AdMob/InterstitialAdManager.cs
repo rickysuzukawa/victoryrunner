@@ -87,6 +87,7 @@ public class InterstitialAdManager : MonoBehaviour
 
             Debug.LogError("Interstitial ad is not ready yet.");
             LoadInterstitialAd(); // 再度広告をロード
+            ReloadScene();
             return;
 
         }

@@ -2212,7 +2212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5347744870408758358
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2316,7 +2316,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5478850961220347305}
         m_TargetAssemblyTypeName: XShareManager, Assembly-CSharp
-        m_MethodName: ShareScreenshotToX
+        m_MethodName: ShareToX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2338,7 +2338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5894c768f22f3486bb0507c90e59bd2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shareHashtags: "#VictoryRunner #\u30D0\u30C3\u30B8\u53D6\u5F97"
+  tweetMessage: "\u30D0\u30C3\u30B8\u3092\u30B2\u30C3\u30C8\u3057\u305F\u3088\uFF01
+    #VictoryRunner #\u30D0\u30C3\u30B8\u53D6\u5F97"
 --- !u!1 &2319903363879786316
 GameObject:
   m_ObjectHideFlags: 0

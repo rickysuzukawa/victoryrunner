@@ -185,6 +185,20 @@ public class RewardAdManager : MonoBehaviour
         const string rewardMsg =
         "Rewarded ad rewarded the user. Type: {0}, amount: {1}.";
 
+        if (Application.internetReachability == NetworkReachability.NotReachable) {
+            Debug.LogWarning("インターネットに接続されていません。広告をスキップして次のステージへ進みます。");
+            LoadNextStageScene();
+            return;
+        }
+
+        if (rewardedAd == null) {
+
+            Debug.Log("リワード広告が準備できていません");
+            LoadNextStageScene();
+            return;
+
+        }
+
         if (rewardedAd != null && rewardedAd.CanShowAd()) {
             rewardedAd.Show((Reward reward) => {
                 // TODO: Reward the user.

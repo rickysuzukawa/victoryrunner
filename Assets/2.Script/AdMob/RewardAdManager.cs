@@ -371,7 +371,7 @@ public class RewardAdManager : MonoBehaviour
         } else {
 
             Debug.Log("現在の最終ステージ(finalStageNum)は" + finalStageNum + "です。エンディングシーンに遷移します。");
-            SceneManager.LoadScene("EndingScene");
+            SceneManager.LoadScene("Ending");
 
         }
 

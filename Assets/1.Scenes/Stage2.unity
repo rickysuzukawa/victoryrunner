@@ -15758,6 +15758,10 @@ PrefabInstance:
       propertyPath: playerSelectNum
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1534424894710735067, guid: 43d7d5d77f8ed4a60802927f7c52db38, type: 3}
+      propertyPath: playerFirstPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

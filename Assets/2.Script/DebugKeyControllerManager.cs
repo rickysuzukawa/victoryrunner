@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class DebugKeyControllerManager : MonoBehaviour
 {
 
+    public int num = 1;
+
     private void Awake() {
 
         DontDestroyOnLoad(gameObject);
@@ -31,8 +33,58 @@ public class DebugKeyControllerManager : MonoBehaviour
             Time.timeScale = 0;
         }
 
+        if (Input.GetKeyDown(KeyCode.Q)) {
+
+            SceneManager.LoadScene("Stage" + (1 + num));
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.W)) {
+
+            SceneManager.LoadScene("Stage" + (2 + num));
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.E)) {
+
+            SceneManager.LoadScene("Stage" + (3 + num));
+
+        }
+
         if (Input.GetKeyDown(KeyCode.R)) {
-            ReloadScene();
+
+            SceneManager.LoadScene("Stage" + (4 + num));
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.T)) {
+
+            SceneManager.LoadScene("Stage" + (5 + num));
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Y)) {
+
+            SceneManager.LoadScene("Stage" + (6 + num));
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.U)) {
+
+            SceneManager.LoadScene("Stage" + (7 + num));
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.I)) {
+
+            SceneManager.LoadScene("Stage" + (8 + num));
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.O)) {
+
+            SceneManager.LoadScene("Stage" + (9 + num));
+
         }
 
     }

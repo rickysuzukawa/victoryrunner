@@ -9,10 +9,10 @@ public class BannerAd : MonoBehaviour
     private BannerView bannerView;
 
     //【本番用】
-    //private string adUnitId = "ca-app-pub-6297510004657467/4962687641";
+    private string adUnitId = "ca-app-pub-6297510004657467/4962687641";
 
     //【テスト用】
-    private string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+    // private string adUnitId = "ca-app-pub-3940256099942544/2934735716";
 
     void Awake() {
         // すでにインスタンスが存在する場合は破棄

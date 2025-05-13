@@ -9139,6 +9139,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 5493405708517824685, guid: 10ef0c5e1f14e4efb8bf6a926f4d80e8, type: 3}
+      propertyPath: m_fontSize
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493405708517824685, guid: 10ef0c5e1f14e4efb8bf6a926f4d80e8, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493405708517824685, guid: 10ef0c5e1f14e4efb8bf6a926f4d80e8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

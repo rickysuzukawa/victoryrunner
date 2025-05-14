@@ -241,7 +241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c352c9ea94d1e4392baa0baf3d9b2151, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 089bb44d8f6d540549684a6d38cc49af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -821,6 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841673217b01342078107ebddb7b2615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num: 1
 --- !u!1 &710523917
 GameObject:
   m_ObjectHideFlags: 0

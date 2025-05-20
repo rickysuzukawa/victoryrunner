@@ -32,7 +32,7 @@ public class RewardAdManager : MonoBehaviour
     private string adUnitId = "ca-app-pub-6297510004657467/9863660531";
 
     // 【テスト用】AdMobのリワード広告テストID
-    //private string adUnitId = "ca-app-pub-3940256099942544/1712485313";
+    // private string adUnitId = "ca-app-pub-3940256099942544/1712485313";
 
 #else
     private string adUnitId = "unused";

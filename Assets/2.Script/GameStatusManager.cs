@@ -52,7 +52,7 @@ public class GameStatusManager : MonoBehaviour
 
     private void Update() {
 
-        Debug.Log(CurrentStatus);
+        // Debug.Log(CurrentStatus);
 
     }
 

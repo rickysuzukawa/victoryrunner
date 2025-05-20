@@ -29,7 +29,7 @@ public class RestartButton : MonoBehaviour
 
     void ShowInterstitialAd() {
 
-        interstitialAdManager.ShowInterstitialAd();
+        interstitialAdManager.ShowRestartInterstitialAd();
 
     }
 

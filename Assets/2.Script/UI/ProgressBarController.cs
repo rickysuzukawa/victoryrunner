@@ -15,7 +15,11 @@ public class ProgressBarController : MonoBehaviour
 
         //ClearedStageキーに何も入っていなければ1を設定
         clearedStage = PlayerPrefs.GetInt("ClearedStage", 1);
+        //本番用
         nextStage = $"Stage{clearedStage}";
+
+        //テスト用ラストステージからのチェック用
+        // nextStage = "Stage30";
 
     }
 
